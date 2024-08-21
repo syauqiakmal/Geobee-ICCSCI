@@ -1,0 +1,458 @@
+.leaflet-container {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.429); /* Menambahkan bayangan */
+  height: 100vh; /* Ubah tinggi menjadi 100% dari viewport height */
+}
+
+
+
+/* .leaflet-control-zoom.leaflet-bar.leaflet-control {
+  display: flex;
+  /* justify-content: flex-start;
+  align-items: flex-end; */
+  /* margin-bottom: 20px; Sesuaikan nilai margin sesuai kebutuhan */
+  /* margin-left: 20px; Sesuaikan nilai margin sesuai kebutuhan */
+
+.leaflet-top.leaflet-left{
+  top: auto;
+  bottom: 50px;
+  left: auto;
+  right: 10px;
+
+}
+
+.pm-textarea.pm-disabled{
+  background-color: transparent;
+  font-family: Arial;
+  
+}
+
+form {
+  position: relative;
+  top: 30%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+.srch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 42.5px); /* Adjusted to fit within the expanded form */
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.194);
+
+}
+
+button {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #222424;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+  background: none;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.194);
+
+}
+
+form:hover,
+form:valid {
+  width: 200px;
+  cursor: pointer;
+  left: calc(50% - 200px); /* Adjusted left position to expand towards the left */
+}
+
+form:hover .srch,
+form:valid .srch {
+  display: flex;
+}
+
+form button,
+form button {
+  background: #ffffff;
+  color: #156983;
+}
+
+.clear-link {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin-right: 10px;
+  font-size: 1em;
+  display: none;
+  cursor: pointer;
+  color: #6d6b79;
+  text-decoration: none; /* Remove underline */
+}
+
+.clear-link.visible {
+  display: block;
+
+}
+
+input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #4c4a4a;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #156b61;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #5390bc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #243655;
+}
+
+.checkbox-wrapper-21 .control {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.checkbox-wrapper-21 .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-wrapper-21 .control__indicator {
+  position: absolute;
+  top: 9px;
+  left: 17px;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(53, 122, 143, 0.955);
+
+
+  
+}
+.checkbox-wrapper-21 .control:hover input ~ .control__indicator,
+.checkbox-wrapper-21 .control input:focus ~ .control__indicator {
+  background-color: rgba(53, 122, 143, 0.955);
+
+}
+.checkbox-wrapper-21 .control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.checkbox-wrapper-21 .control:hover input:not([disabled]):checked ~ .control__indicator,
+.checkbox-wrapper-21 .control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+.checkbox-wrapper-21 .control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.checkbox-wrapper-21 .control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.checkbox-wrapper-21 .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.checkbox-wrapper-21 .control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.checkbox-wrapper-21 .control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #d2cdcd;
+}
+
+
+
+
+.leaflet-bottom.leaflet-right {
+  /* position: absolute; */
+  bottom: 0;
+  left: 1%;
+  /* transform: translateX(-5%); */
+  display: flex;
+  /* justify-content: center; */
+}
+
+/* Target the toolbar elements */
+.leaflet-pm-toolbar {
+  display:flex;
+  
+}
+.leaflet-pm-toolbar > .button-container a{
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+.leaflet-control-attribution.leaflet-control {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.leaflet-pm-actions-container.pos-right{
+ margin-top: -40px;
+ margin-right: -95px;
+ 
+}
+
+.pm-textarea {
+  background-color: rgba(255, 255, 255, 0.295); /* Mengatur warna putih dengan tingkat transparansi 0.5 */
+}
+
+
+.coordinate {
+  position: absolute;
+  top: calc(100% - 50px + 10px); /* Posisi vertikal di bawah peta */
+  right: 10px; /* Posisi horizontal di sebelah kanan */
+  background-color: white;
+  padding: 2px;
+  border: 2px solid lightslategray;
+  border-radius: 3px;
+  width: 200px;
+  font-size: xx-small;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#color-picker,
+#pop-color-picker {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#color-picker::-webkit-color-swatch {
+  border-radius: 2px;
+  border: none;
+}
+
+.noUi-connect {
+  background-color: #004bd7 !important;
+}
+
+
+.logo-container {
+  flex-grow: 1; /* Membuat logo mengambil sisa ruang kosong */
+  text-align: center; /* Mengatur teks logo menjadi tengah */
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.dashboard-menu {
+  position: absolute;
+  display: flex;
+  align-items: center; /* Mengatur strip menu ke tengah secara vertikal */
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.038);
+  /* border: 2px solid lightslategray; */
+  height: 40px;
+  width: 155px;
+}
+
+.menu-logo-container{
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.dashboard-toggle {
+  
+  display: none;
+}
+
+.divider-vertical {
+  border: none; /* Remove the default border */
+  border-left: 1px solid #000; /* Add a vertical border */
+  height: 70%; /* Set the height to fill the container */
+  margin: 0 4px; /* Adjust margin as needed */
+}
+
+
+.dashboard-icon {
+  /* background-color: white; */
+  padding: 4px;
+  /* border: 2px solid lightslategray; */
+  border-radius: 5px;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 3px;
+  margin-left: 10px;
+  /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312); */
+}
+
+
+.strip {
+  width: 100%;
+  height: 3px;
+  background: #156983;
+  margin-bottom: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.dashboard-toggle:checked + .dashboard-icon .strip:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); 
+}
+
+.dashboard-toggle:checked + .dashboard-icon .strip:nth-child(2) {
+  opacity: 0;
+}
+
+.dashboard-toggle:checked + .dashboard-icon .strip:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px); 
+}
+
+.dashboard-links {
+  position: absolute;
+  top: calc(4px + 7vh); 
+  left: calc(1% ); 
+  background-color: #fbfafad4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.402);
+  border-radius: 7px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+ 
+}
+
+ul{
+  color: #111111;
+  
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+
+
+.dashboard-toggle:checked + .dashboard-icon ~ .dashboard-links {
+  max-height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.dashboard-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-links label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dashboard-links label:hover {
+  background-color: #aef8fb;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+
+.batas{
+  border-top-color: #263A40;
+}
+
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: rgba(53, 122, 143, 0.955);
+
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: rgb(58, 77, 101);
+  width: 1.1em;
+  height: 1.1em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  /* margin-top: 20px; */
+  margin-right: 10px;
+  margin-left: 8px;
+  
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.10em);
+}
+
+
